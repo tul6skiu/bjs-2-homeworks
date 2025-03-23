@@ -39,9 +39,8 @@ class Triangle {
 
 function getTriangle(a, b, c) {
     try {
-        return new Triangle(a, b, c); // Пытаемся создать треугольник
+        return new Triangle(a, b, c);
     } catch (error) {
-        // Возвращаем объект с геттерами, если треугольник не существует
         return {
             get perimeter() {
                 return "Ошибка! Треугольник не существует";
